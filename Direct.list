@@ -5,9 +5,7 @@
 DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
-DOMAIN-SUFFIX,huangshine.vip
 DOMAIN-SUFFIX,serif.com
-DOMAIN-SUFFIX,cloudfront.net
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,baidu
