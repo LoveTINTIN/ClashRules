@@ -8,7 +8,10 @@ DOMAIN-SUFFIX,avedex.cc
 DOMAIN-SUFFIX,alvey.io
 DOMAIN-SUFFIX,elvesdiamonds.com
 DOMAIN-SUFFIX,alveybridge.com
+DOMAIN-SUFFIX,alveyswap.app
 DOMAIN-SUFFIX,balinbank.com
+DOMAIN-SUFFIX,pancakeswap.com
+DOMAIN-SUFFIX,pancakeswap.finance
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
