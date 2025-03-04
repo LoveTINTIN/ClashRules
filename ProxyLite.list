@@ -3,16 +3,17 @@
 # 域名后缀匹配
 DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,charliemonroe.net
-DOMAIN-SUFFIX,avedex.cc
-DOMAIN-SUFFIX,aveipcheck.xyz
 DOMAIN-SUFFIX,alveyscan.com
 DOMAIN-SUFFIX,alvey.io
-DOMAIN-SUFFIX,elvesdiamonds.com
 DOMAIN-SUFFIX,alveybridge.com
 DOMAIN-SUFFIX,alveyswap.app
 DOMAIN-SUFFIX,balinbank.com
+DOMAIN-SUFFIX,elvesdex.com
+DOMAIN-SUFFIX,elvesdiamonds.com
 DOMAIN-SUFFIX,pancakeswap.com
 DOMAIN-SUFFIX,pancakeswap.finance
+DOMAIN-SUFFIX,avedex.cc
+DOMAIN-SUFFIX,aveipcheck.xyz
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
