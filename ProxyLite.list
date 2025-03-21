@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,pancakeswap.com
 DOMAIN-SUFFIX,pancakeswap.finance
 DOMAIN-SUFFIX,avedex.cc
 DOMAIN-SUFFIX,aveipcheck.xyz
+DOMAIN-SUFFIX,metamask.io
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
