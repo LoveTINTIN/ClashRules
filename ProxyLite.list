@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,avedex.cc
 DOMAIN-SUFFIX,aveipcheck.xyz
 DOMAIN-SUFFIX,metamask.io
 DOMAIN-SUFFIX,extendoffice.com
+DOMAIN-SUFFIX,dockerstatic.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
