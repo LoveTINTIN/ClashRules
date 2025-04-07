@@ -17,6 +17,7 @@ DOMAIN-SUFFIX,aveipcheck.xyz
 DOMAIN-SUFFIX,metamask.io
 DOMAIN-SUFFIX,extendoffice.com
 DOMAIN-SUFFIX,dockerstatic.com
+DOMAIN-SUFFIX,asuswrt-merlin.net
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
