@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,metamask.io
 DOMAIN-SUFFIX,extendoffice.com
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,asuswrt-merlin.net
+DOMAIN-SUFFIX,proxmox.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
