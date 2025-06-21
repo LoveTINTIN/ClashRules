@@ -6,7 +6,7 @@ proxies:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 直连☄️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️]}
+  - {name: 国内🇨🇳, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️]}
   - {name: 社交-Telegram📲, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️]}
   - {name: 影音-YouTube🎬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️]}
   - {name: 影音-TikTok🎵, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️]}
@@ -29,7 +29,7 @@ proxy-groups:
 rules:
 #域名规则
   - RULE-SET,proxylite_class,代理🫧
-  - DOMAIN-SUFFIX,qichiyu.com,代理🫧
+  - RULE-SET,direct_class,直连🌞
   - RULE-SET,private_domain,直连🌞
   - RULE-SET,telegram_domain,社交-Telegram📲
   - RULE-SET,youtube_domain,影音-YouTube🎬
@@ -43,7 +43,7 @@ rules:
   - RULE-SET,chatgpt_domain,工具-ChatGPT💡
   - RULE-SET,github_domain,工具-GitHub👨🏿‍💻
   - RULE-SET,paypal_domain,金融-PayPal💶
-  - RULE-SET,Crypto_class,金融-数字货币🪙
+  - RULE-SET,crypto_class,金融-数字货币🪙
   - RULE-SET,game1_class,游戏平台🎮
   - RULE-SET,game2_class,游戏平台🎮
   - RULE-SET,game3_class,游戏平台🎮
@@ -53,11 +53,11 @@ rules:
 #IP规则
   - RULE-SET,gfw_domain,代理🫧
   - RULE-SET,geolocation-!cn,代理🫧
-  - RULE-SET,cn_domain,直连☄️
+  - RULE-SET,cn_domain,国内🇨🇳
   - RULE-SET,google_ip,大厂-Google🍀,no-resolve
   - RULE-SET,netflix_ip,影音-奈飞🎥,no-resolve
   - RULE-SET,telegram_ip,社交-Telegram📲,no-resolve
-  - RULE-SET,cn_ip,直连☄️
+  - RULE-SET,cn_ip,国内🇨🇳
   - MATCH,GLOBAL
 
 # 规则集
@@ -66,8 +66,9 @@ rule-anchor:
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
+  direct_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/Direct.list"}
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
-  Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
+  crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
   game1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
   game2_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
   game3_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
