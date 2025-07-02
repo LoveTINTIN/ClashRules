@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,elvesdex.com
 DOMAIN-SUFFIX,elvesdiamonds.com
 DOMAIN-SUFFIX,pancakeswap.com
 DOMAIN-SUFFIX,pancakeswap.finance
+DOMAIN-SUFFIX,pancakeswap.info
 DOMAIN-SUFFIX,avedex.cc
 DOMAIN-SUFFIX,aveipcheck.xyz
 DOMAIN-SUFFIX,aveapi.com
@@ -23,6 +24,7 @@ DOMAIN-SUFFIX,proxmox.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
+DOMAIN-KEYWORD,pancakeswap
 
 # IP段匹配
 IP-CIDR,142.171.133.131/32,no-resolve
