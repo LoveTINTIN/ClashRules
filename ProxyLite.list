@@ -12,7 +12,6 @@ DOMAIN-SUFFIX,elvesdex.com
 DOMAIN-SUFFIX,elvesdiamonds.com
 DOMAIN-SUFFIX,pancakeswap.com
 DOMAIN-SUFFIX,pancakeswap.finance
-DOMAIN-SUFFIX,pancakeswap.info
 DOMAIN-SUFFIX,avedex.cc
 DOMAIN-SUFFIX,aveipcheck.xyz
 DOMAIN-SUFFIX,aveapi.com
@@ -21,6 +20,10 @@ DOMAIN-SUFFIX,extendoffice.com
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,asuswrt-merlin.net
 DOMAIN-SUFFIX,proxmox.com
+
+#匹配域名
+DOMAIN,nodes.pancakeswap.info
+DOMAIN,wallet-api.pancakeswap.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
