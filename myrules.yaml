@@ -50,6 +50,7 @@ rules:
   - RULE-SET,speedtest_domain,工具-Speedtest✈️
   - RULE-SET,chatgpt_domain,工具-ChatGPT💡
   - RULE-SET,github_domain,工具-GitHub👨🏿‍💻
+  - RULE-SET,docker_class,工具-dokcer💿
   - RULE-SET,paypal_domain,金融-PayPal💶
   - RULE-SET,crypto1_class,金融-数字货币🪙
   - RULE-SET,crypto2_class,金融-数字货币🪙
@@ -75,6 +76,7 @@ rule-anchor:
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
+  docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/docker.list"}
   direct_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/Direct.list"}
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
   crypto1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
