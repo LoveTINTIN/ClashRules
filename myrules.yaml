@@ -40,35 +40,35 @@ rules:
   - RULE-SET,proxylite_class,代理🫧
   - RULE-SET,direct_class,直连🌞
   - RULE-SET,private_domain,直连🌞
-  - RULE-SET,telegram_domain,社交-Telegram📲
-  - RULE-SET,youtube_domain,影音-YouTube🎬
-  - RULE-SET,tiktok_domain,影音-TikTok🎵
-  - RULE-SET,netflix_domain,影音-奈飞🎥
-  - RULE-SET,apple_domain,大厂-Apple🍎
-  - RULE-SET,google_domain,大厂-Google🍀
-  - RULE-SET,onedrive_domain,大厂-OneDrive🐬
-  - RULE-SET,microsoft_domain,大厂-微软🪟
-  - RULE-SET,speedtest_domain,工具-Speedtest✈️
-  - RULE-SET,chatgpt_domain,工具-ChatGPT💡
-  - RULE-SET,github_domain,工具-GitHub👨🏿‍💻
-  - RULE-SET,docker_class,工具-Dokcer💿
-  - RULE-SET,paypal_domain,金融-PayPal💶
-  - RULE-SET,crypto1_class,金融-数字货币🪙
-  - RULE-SET,crypto2_class,金融-数字货币🪙
-  - RULE-SET,game1_class,游戏平台🎮
-  - RULE-SET,game2_class,游戏平台🎮
-  - RULE-SET,game3_class,游戏平台🎮
-  - RULE-SET,game4_class,游戏平台🎮
-  - RULE-SET,game5_class,游戏平台🎮
+  - RULE-SET,telegram_domain,乙-社交-Telegram📲
+  - RULE-SET,youtube_domain,丙-影音-YouTube🎬
+  - RULE-SET,tiktok_domain,丙-影音-TikTok🎵
+  - RULE-SET,netflix_domain,丙-影音-奈飞🎥
+  - RULE-SET,apple_domain,丁-大厂-Apple🍎
+  - RULE-SET,google_domain,丁-大厂-Google🍀
+  - RULE-SET,onedrive_domain,丁-大厂-OneDrive🐬
+  - RULE-SET,microsoft_domain,丁-大厂-微软🪟
+  - RULE-SET,speedtest_domain,戊-工具-Speedtest✈️
+  - RULE-SET,chatgpt_domain,戊-工具-ChatGPT💡
+  - RULE-SET,github_domain,戊-工具-GitHub👨🏿‍💻
+  - RULE-SET,docker_class,戊-工具-Dokcer💿
+  - RULE-SET,paypal_domain,己-金融-PayPal💶
+  - RULE-SET,crypto1_class,己-金融-数字货币🪙
+  - RULE-SET,crypto2_class,己-金融-数字货币🪙
+  - RULE-SET,game1_class,庚-游戏平台🎮
+  - RULE-SET,game2_class,庚-游戏平台🎮
+  - RULE-SET,game3_class,庚-游戏平台🎮
+  - RULE-SET,game4_class,庚-游戏平台🎮
+  - RULE-SET,game5_class,庚-游戏平台🎮
 
 #IP规则
   - RULE-SET,gfw_domain,代理🫧
   - RULE-SET,geolocation-!cn,代理🫧
-  - RULE-SET,cn_domain,国内🇨🇳
-  - RULE-SET,google_ip,大厂-Google🍀,no-resolve
-  - RULE-SET,netflix_ip,影音-奈飞🎥,no-resolve
-  - RULE-SET,telegram_ip,社交-Telegram📲,no-resolve
-  - RULE-SET,cn_ip,国内🇨🇳
+  - RULE-SET,cn_domain,甲-国内🇨🇳
+  - RULE-SET,google_ip,丁-大厂-Google🍀,no-resolve
+  - RULE-SET,netflix_ip,丙-影音-奈飞🎥,no-resolve
+  - RULE-SET,telegram_ip,乙-社交-Telegram📲,no-resolve
+  - RULE-SET,cn_ip,甲-国内🇨🇳
   - MATCH,GLOBAL
 
 # 规则集
