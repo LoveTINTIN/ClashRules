@@ -3,6 +3,14 @@ proxies:
   - {name: 代理🫧, type: socks5, server: , port: , username: , password: }
   - {name: 直连🌞, type: direct}
   - {name: 拒绝⛔️, type: reject}
+  - {"type": "vless", "name": "日本", "server": "www.visa.com.tw", "port": 443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  - {"type": "vless", "name": "日本2", "server": "www.visa.com.hk", "port": 2053, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  - {"type": "vless", "name": "日本3", "server": "www.visa.com.br", "port": 8443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  - {"type": "vless", "name": "日本4", "server": "www.visaeurope.ch", "port": 443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  - {"type": "vless", "name": "日本5", "server": "usa.visa.com", "port": 2053, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  - {"type": "vless", "name": "日本6", "server": "icook.hk", "port": 8443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  - {"type": "vless", "name": "日本7", "server": "icook.tw", "port": 443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
