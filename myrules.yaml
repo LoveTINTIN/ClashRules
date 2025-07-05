@@ -3,13 +3,13 @@ proxies:
   - {name: 代理🫧, type: socks5, server: , port: , username: , password: }
   - {name: 直连🌞, type: direct}
   - {name: 拒绝⛔️, type: reject}
-  - {"type": "vless", "name": "日本", "server": "www.visa.com.tw", "port": 443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
-  - {"type": "vless", "name": "日本2", "server": "www.visa.com.hk", "port": 2053, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
-  - {"type": "vless", "name": "日本3", "server": "www.visa.com.br", "port": 8443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
-  - {"type": "vless", "name": "日本4", "server": "www.visaeurope.ch", "port": 443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
-  - {"type": "vless", "name": "日本5", "server": "usa.visa.com", "port": 2053, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
-  - {"type": "vless", "name": "日本6", "server": "icook.hk", "port": 8443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
-  - {"type": "vless", "name": "日本7", "server": "icook.tw", "port": 443, "uuid": "813f0233-bc36-4140-8c62-025142e67239", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "liusocks.huangshine.vip", "ws-opts": {"path": "/813f0233-bc36-4140-8c62-025142e67239?ed=2048", "headers": {"host": "liusocks.huangshine.vip"}}}
+  - {"type": "", "name": "日本", "server": "", "port": , "uuid": "", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "", "ws-opts": {"path": "", "headers": {"host": ""}}}
+  - {"type": "", "name": "日本2", "server": "", "port": , "uuid": "", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "", "ws-opts": {"path": "", "headers": {"host": ""}}}
+  - {"type": "", "name": "日本3", "server": "", "port": , "uuid": "", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "", "ws-opts": {"path": "", "headers": {"host": ""}}}
+  - {"type": "", "name": "日本4", "server": "", "port": , "uuid": "", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "", "ws-opts": {"path": "", "headers": {"host": ""}}}
+  - {"type": "", "name": "日本5", "server": "", "port": , "uuid": "", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "", "ws-opts": {"path": "", "headers": {"host": ""}}}
+  - {"type": "", "name": "日本6", "server": "", "port": , "uuid": "", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "", "ws-opts": {"path": "", "headers": {"host": ""}}}
+  - {"type": "", "name": "日本7", "server": "", "port": , "uuid": "", "skip-cert-verify": true, "udp": true, "tls": true, "network": "ws", "servername": "", "ws-opts": {"path": "", "headers": {"host": ""}}}
   
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
@@ -51,7 +51,8 @@ rules:
   - RULE-SET,chatgpt_domain,工具-ChatGPT💡
   - RULE-SET,github_domain,工具-GitHub👨🏿‍💻
   - RULE-SET,paypal_domain,金融-PayPal💶
-  - RULE-SET,crypto_class,金融-数字货币🪙
+  - RULE-SET,crypto1_class,金融-数字货币🪙
+  - RULE-SET,crypto2_class,金融-数字货币🪙
   - RULE-SET,game1_class,游戏平台🎮
   - RULE-SET,game2_class,游戏平台🎮
   - RULE-SET,game3_class,游戏平台🎮
@@ -76,7 +77,8 @@ rule-anchor:
 rule-providers: 
   direct_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/Direct.list"}
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
-  crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
+  crypto1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
+  crypto2_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/Crypto.list"} 
   game1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
   game2_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
   game3_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
