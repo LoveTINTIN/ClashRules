@@ -4,27 +4,28 @@ proxies:
   - {name: 直连🌞, type: direct}
   - {name: 拒绝⛔️, type: reject}
   - {name: 荷兰🇳🇱, type: hysteria2, server: , port: , skip-cert-verify: , password: }
+  - {name: 德国🇩🇪, type: hysteria2, server: , port: , skip-cert-verify: , password: }
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 甲-国内🇨🇳, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 甲-非中国♻️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 乙-社交-Telegram📲, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 丙-影音-YouTube🎬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 丙-影音-TikTok🎵, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 丙-影音-奈飞🎥, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 丁-大厂-Apple🍎, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 丁-大厂-微软🪟, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 丁-大厂-Google🍀, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 丁-大厂-OneDrive🐬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 戊-工具-Speedtest✈️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 戊-工具-GitHub👨🏿‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 戊-工具-ChatGPT💡, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 戊-工具-Dokcer💿, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 己-金融-PayPal💶, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 己-金融-数字货币🪙, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: 庚-游戏平台🎮, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
-  - {name: GLOBAL, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️,荷兰🇳🇱]}
+  - {name: 甲-国内🇨🇳, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 甲-非中国♻️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 乙-社交-Telegram📲, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 丙-影音-YouTube🎬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 丙-影音-TikTok🎵, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 丙-影音-奈飞🎥, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 丁-大厂-Apple🍎, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 丁-大厂-微软🪟, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 丁-大厂-Google🍀, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 丁-大厂-OneDrive🐬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 戊-工具-Speedtest✈️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 戊-工具-GitHub👨🏿‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 戊-工具-ChatGPT💡, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 戊-工具-Dokcer💿, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 己-金融-PayPal💶, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 己-金融-数字货币🪙, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 庚-游戏平台🎮, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: GLOBAL, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
  # - {name: ALL🌐, type: select, include-all: false}
 
 # 规则匹配
@@ -102,3 +103,4 @@ rule-providers:
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
+
