@@ -2,7 +2,6 @@
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,qichiyu.com
-DOMAIN-SUFFIX,charliemonroe.net
 DOMAIN-SUFFIX,alveyscan.com
 DOMAIN-SUFFIX,alvey.io
 DOMAIN-SUFFIX,alveybridge.com
@@ -17,7 +16,6 @@ DOMAIN-SUFFIX,aveipcheck.xyz
 DOMAIN-SUFFIX,aveapi.com
 DOMAIN-SUFFIX,ave.ai
 DOMAIN-SUFFIX,metamask.io
-DOMAIN-SUFFIX,extendoffice.com
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,asuswrt-merlin.net
 DOMAIN-SUFFIX,proxmox.com
