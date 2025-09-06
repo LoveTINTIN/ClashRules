@@ -25,6 +25,7 @@ proxy-groups:
   - {name: 己-金融-PayPal💶, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
   - {name: 己-金融-数字货币🪙, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
   - {name: 庚-游戏平台🎮, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
+  - {name: 辛-工作🧑‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
   - {name: GLOBAL, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 荷兰🇳🇱, 德国🇩🇪]}
  # - {name: ALL🌐, type: select, include-all: false}
 
@@ -55,6 +56,7 @@ rules:
   - RULE-SET,game3_class,庚-游戏平台🎮
   - RULE-SET,game4_class,庚-游戏平台🎮
   - RULE-SET,game5_class,庚-游戏平台🎮
+  - RULE-SET,work_class,辛-工作🧑‍💻
 
 #IP规则
   - RULE-SET,gfw_domain,甲-非中国♻️
@@ -72,6 +74,7 @@ rule-anchor:
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
+  work_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/work.list"}
   docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/docker.list"}
   direct_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/Direct.list"}
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
@@ -103,4 +106,5 @@ rule-providers:
   google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
   telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
   netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
+
 
