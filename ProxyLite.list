@@ -19,6 +19,7 @@ DOMAIN-SUFFIX,metamask.io
 DOMAIN-SUFFIX,dockerstatic.com
 DOMAIN-SUFFIX,asuswrt-merlin.net
 DOMAIN-SUFFIX,proxmox.com
+DOMAIN-SUFFIX,6551.io
 
 #匹配域名
 DOMAIN,nodes.pancakeswap.info
