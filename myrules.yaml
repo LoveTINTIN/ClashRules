@@ -47,15 +47,14 @@ rules:
   - RULE-SET,speedtest_domain,戊-工具-Speedtest✈️
   - RULE-SET,chatgpt_domain,戊-工具-ChatGPT💡
   - RULE-SET,github_domain,戊-工具-GitHub👨🏿‍💻
-  - RULE-SET,docker_class,戊-工具-Dokcer💿
+  - RULE-SET,docker_domain,戊-工具-Dokcer💿
   - RULE-SET,paypal_domain,己-金融-PayPal💶
-  - RULE-SET,crypto1_class,己-金融-数字货币🪙
+  - RULE-SET,crypto1_domain,己-金融-数字货币🪙
   - RULE-SET,crypto2_class,己-金融-数字货币🪙
-  - RULE-SET,game1_class,庚-游戏平台🎮
-  - RULE-SET,game2_class,庚-游戏平台🎮
-  - RULE-SET,game3_class,庚-游戏平台🎮
-  - RULE-SET,game4_class,庚-游戏平台🎮
-  - RULE-SET,game5_class,庚-游戏平台🎮
+  - RULE-SET,steam_domain,庚-游戏平台🎮
+  - RULE-SET,steamcn_domain,庚-游戏平台🎮
+  - RULE-SET,epic_domain,庚-游戏平台🎮
+  - RULE-SET,epiccn_domain,庚-游戏平台🎮
   - RULE-SET,work_class,辛-工作🧑‍💻
 
 #IP规则
@@ -75,16 +74,15 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   work_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/work.list"}
-  docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/docker.list"}
+  docker_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/docker.srs"}
   direct_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/Direct.list"}
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
-  crypto1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
+  crypto1_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-cryptocurrency.srs"}
   crypto2_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/Crypto.list"} 
-  game1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
-  game2_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
-  game3_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
-  game4_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
-  game5_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list"}
+  steam_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam.srs"}
+  steamcn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/steam@cn.srs"}
+  epic_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/epicgames.srs"}
+  epiccn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/epicgames@cn.srs"}
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   chatgpt_domain: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
