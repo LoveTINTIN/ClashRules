@@ -8,6 +8,7 @@ proxies:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
+  - {name: 辛-Trello📘, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 甲-国内🇨🇳, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 甲-非中国♻️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 乙-社交-Telegram📲, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
