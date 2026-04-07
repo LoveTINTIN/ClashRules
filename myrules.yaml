@@ -8,66 +8,67 @@ proxies:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 甲-国内🇨🇳, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 甲-非中国♻️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 乙-社交-Telegram📲, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 丙-影音-YouTube🎬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 丙-影音-TikTok🎵, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 丙-影音-奈飞🎥, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 丁-大厂-Apple🍎, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 丁-大厂-微软🪟, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 丁-大厂-Google🍀, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 丁-大厂-OneDrive🐬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 戊-工具-Speedtest✈️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 戊-工具-GitHub👨🏿‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 戊-工具-ChatGPT💡, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 戊-工具-Dokcer💿, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 己-金融-PayPal💶, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 己-金融-数字货币🪙, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 庚-游戏平台🎮, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 辛-工作🧑‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: 辛-Trello📘, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
-  - {name: GLOBAL, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 01-Trello📘, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 01-国内🇨🇳, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 01-非中国♻️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 02-社交-Telegram📲, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 03-影音-YouTube🎬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 03-影音-TikTok🎵, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 03-影音-奈飞🎥, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 04-大厂-Apple🍎, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 04-大厂-微软🪟, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 04-大厂-Google🍀, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 04-大厂-OneDrive🐬, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 05-工具-Speedtest✈️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 05-工具-GitHub👨🏿‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 05-工具-ChatGPT💡, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 05-工具-Dokcer💿, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 06-金融-PayPal💶, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 06-金融-数字货币🪙, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 07-游戏平台🎮, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 08-工作🧑‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 漏网之鱼🐟, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
  # - {name: ALL🌐, type: select, include-all: false}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
 #域名规则
-  - RULE-SET,direct_class,甲-国内🇨🇳
-  - RULE-SET,private_domain,甲-国内🇨🇳
-  - RULE-SET,proxylite_class,甲-非中国♻️
-  - RULE-SET,telegram_domain,乙-社交-Telegram📲
-  - RULE-SET,youtube_domain,丙-影音-YouTube🎬
-  - RULE-SET,tiktok_domain,丙-影音-TikTok🎵
-  - RULE-SET,netflix_domain,丙-影音-奈飞🎥
-  - RULE-SET,apple_domain,丁-大厂-Apple🍎
-  - RULE-SET,google_domain,丁-大厂-Google🍀
-  - RULE-SET,onedrive_domain,丁-大厂-OneDrive🐬
-  - RULE-SET,microsoft_domain,丁-大厂-微软🪟
-  - RULE-SET,speedtest_domain,戊-工具-Speedtest✈️
-  - RULE-SET,chatgpt_domain,戊-工具-ChatGPT💡
-  - RULE-SET,github_domain,戊-工具-GitHub👨🏿‍💻
-  - RULE-SET,docker_domain,戊-工具-Dokcer💿
-  - RULE-SET,paypal_domain,己-金融-PayPal💶
-  - RULE-SET,crypto_domain,己-金融-数字货币🪙
-  - RULE-SET,cryptocn_domain,己-金融-数字货币🪙
-  - RULE-SET,steam_domain,庚-游戏平台🎮
-  - RULE-SET,steamcn_domain,庚-游戏平台🎮
-  - RULE-SET,epic_domain,庚-游戏平台🎮
-  - RULE-SET,epiccn_domain,庚-游戏平台🎮
-  - RULE-SET,work_class,辛-工作🧑‍💻
-  - RULE-SET,trello_domain,辛-Trello📘
+  - RULE-SET,trello_domain,01-Trello📘
+  - RULE-SET,direct_class,01-国内🇨🇳
+  - RULE-SET,private_domain,01-国内🇨🇳
+  - RULE-SET,proxylite_class,01-非中国♻️
+  - RULE-SET,telegram_domain,02-社交-Telegram📲
+  - RULE-SET,youtube_domain,03-影音-YouTube🎬
+  - RULE-SET,tiktok_domain,03-影音-TikTok🎵
+  - RULE-SET,netflix_domain,03-影音-奈飞🎥
+  - RULE-SET,apple_domain,04-大厂-Apple🍎
+  - RULE-SET,google_domain,04-大厂-Google🍀
+  - RULE-SET,onedrive_domain,04-大厂-OneDrive🐬
+  - RULE-SET,microsoft_domain,04-大厂-微软🪟
+  - RULE-SET,speedtest_domain,05-工具-Speedtest✈️
+  - RULE-SET,chatgpt_domain,05-工具-ChatGPT💡
+  - RULE-SET,github_domain,05-工具-GitHub👨🏿‍💻
+  - RULE-SET,docker_domain,05-工具-Dokcer💿
+  - RULE-SET,paypal_domain,06-金融-PayPal💶
+  - RULE-SET,crypto_domain,06-金融-数字货币🪙
+  - RULE-SET,cryptocn_domain,06-金融-数字货币🪙
+  - RULE-SET,steam_domain,07-游戏平台🎮
+  - RULE-SET,steamcn_domain,07-游戏平台🎮
+  - RULE-SET,epic_domain,07-游戏平台🎮
+  - RULE-SET,epiccn_domain,07-游戏平台🎮
+  - RULE-SET,work_class,08-工作🧑‍💻
+  
 
 #IP规则
-  - RULE-SET,gfw_domain,甲-非中国♻️
-  - RULE-SET,geolocation-!cn,甲-非中国♻️
-  - RULE-SET,cn_domain,甲-国内🇨🇳
-  - RULE-SET,google_ip,丁-大厂-Google🍀,no-resolve
-  - RULE-SET,netflix_ip,丙-影音-奈飞🎥,no-resolve
-  - RULE-SET,telegram_ip,乙-社交-Telegram📲,no-resolve
-  - RULE-SET,cn_ip,甲-国内🇨🇳
-  - MATCH,GLOBAL
+  - RULE-SET,gfw_domain,01-非中国♻️
+  - RULE-SET,geolocation-!cn,01-非中国♻️
+  - RULE-SET,cn_domain,01-国内🇨🇳
+  - RULE-SET,google_ip,04-大厂-Google🍀,no-resolve
+  - RULE-SET,netflix_ip,03-影音-奈飞🎥,no-resolve
+  - RULE-SET,telegram_ip,02-社交-Telegram📲,no-resolve
+  - RULE-SET,cn_ip,01-国内🇨🇳
+  - MATCH,漏网之鱼🐟
 
 # 规则集
 rule-anchor:
