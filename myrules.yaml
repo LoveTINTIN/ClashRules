@@ -8,7 +8,6 @@ proxies:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 辛-Trello📘, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 甲-国内🇨🇳, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 甲-非中国♻️, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 乙-社交-Telegram📲, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
@@ -27,6 +26,7 @@ proxy-groups:
   - {name: 己-金融-数字货币🪙, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 庚-游戏平台🎮, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: 辛-工作🧑‍💻, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
+  - {name: 辛-Trello📘, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
   - {name: GLOBAL, type: select, proxies: [代理🫧, 直连🌞, 拒绝⛔️, 新德国🇩🇪, 德国🇩🇪]}
  # - {name: ALL🌐, type: select, include-all: false}
 
@@ -78,14 +78,14 @@ rule-providers:
   work_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/work.list"}
   direct_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/Direct.list"}
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
-  trello_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/trello.srs"}
-  docker_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/docker.srs"}
-  crypto_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.mrs"}
-  cryptocn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency@cn.mrs"} 
-  steam_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.srs"}
-  steamcn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.srs"}
-  epic_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/epicgames.srs"}
-  epiccn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/epicgames@cn.srs"}
+  trello_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/trello.srs"}
+  docker_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/docker.srs"}
+  crypto_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-cryptocurrency.mrs"}
+  cryptocn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-cryptocurrency@cn.mrs"} 
+  steam_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.srs"}
+  steamcn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam@cn.srs"}
+  epic_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/epicgames.mrs"}
+  epiccn_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/epicgames@cn.srs"}
   private_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   chatgpt_domain: {  <<: *domain, url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
