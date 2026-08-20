@@ -29,7 +29,9 @@ IP-CIDR,114.114.114.114/32,no-resolve
 IP-CIDR,114.114.115.115/32,no-resolve
 
 # 高德
-DOMAIN-SUFFIX,amap.com,no-resolve
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,autonavi.com
+DOMAIN-SUFFIX,amapauto.com
 
 # Trello
 # DOMAIN-SUFFIX,trello.com  
