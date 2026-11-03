@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,metatrader5.com
 DOMAIN-SUFFIX,doumei.cc
 DOMAIN-SUFFIX,flap.sh
 DOMAIN-SUFFIX,pinksale.finance
+DOMAIN-SUFFIX,geckoterminal.com
 
 #匹配域名
 DOMAIN,nodes.pancakeswap.info
